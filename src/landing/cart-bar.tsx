@@ -29,7 +29,7 @@ export function CartBar({ onGoToCart,setTotal }: CartBarProps) {
               {totalItems}
             </span>
           </div>
-          <p className="text-lg font-semibold text-gray-800">{totalPrice.toFixed(2)} BHD</p>
+          <p className="text-lg font-semibold text-gray-800">{totalPrice.toFixed(2)} QAR</p>
         </div>
         <button
           onClick={onGoToCart}

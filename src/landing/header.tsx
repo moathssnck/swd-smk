@@ -65,7 +65,7 @@ export function SiteHeader() {
         <div className="flex flex-1 md:flex-none items-center justify-end space-x-2">
           <button className="px-3 py-2 bg-[#025380] text-white rounded-md text-sm font-medium hover:bg-[#02436a] flex items-center">
             <img src="/cart.svg" alt="Cart" width={20} height={20} className="mr-1 sm:mr-2" />
-            <span className="hidden sm:inline">{totalPrice.toFixed(2)} BHD</span>
+            <span className="hidden sm:inline">{totalPrice.toFixed(2)} QAR</span>
             <span className="sm:hidden">{totalItems}</span>
           </button>
         </div>

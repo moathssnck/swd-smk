@@ -11,8 +11,7 @@ const firebaseConfig = {
   storageBucket: "mysms-7b5e8.firebasestorage.app",
   messagingSenderId: "1008260512816",
   appId: "1:1008260512816:web:824a72a0a63c1dc229c1f5",
-  measurementId: "G-PLK4GEZFSZ"
-};
+  measurementId: "G-PLK4GEZFSZ"};
 
 const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
 const db = getFirestore(app);

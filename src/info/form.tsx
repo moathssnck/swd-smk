@@ -180,11 +180,11 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
             <div className="space-y-2 text-sm mb-4">
               <div className="flex justify-between">
                 <p className="text-gray-600">Products </p>
-                <p className="text-gray-800 font-medium">{total} BHD</p>
+                <p className="text-gray-800 font-medium">{total} QAR</p>
               </div>
               <div className="flex justify-between">
                 <p className="text-gray-600">Delivery Fee</p>
-                <p className="text-gray-800 font-medium">0.00 BHD</p>
+                <p className="text-gray-800 font-medium">0.00 QAR</p>
               </div>
             </div>
 
@@ -232,10 +232,10 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
                   className="h-5 w-5 text-blue-600 border-gray-300 focus:ring-blue-500 mt-0.5"
                 />
                 <div className="ml-3 text-sm">
-                  <span className="font-medium text-gray-800">Pay only 10 BHD to confirm your order</span>
+                  <span className="font-medium text-gray-800">Pay only 10 QAR to confirm your order</span>
                   <p className="text-gray-500">
                     This will be deducted from the order total. You'll pay the rest upon delivery (delivery fee of 10
-                    BHD applies).
+                    QAR applies).
                   </p>
                 </div>
               </label>
@@ -246,13 +246,13 @@ export default function InfoForm({ handleNextPage, setName, setPhone,total }: In
           <div className="sticky bottom-0 bg-white py-4 -mx-6 -mb-8 md:-mx-8 md:-mb-8 px-6 md:px-8 border-t border-gray-200 rounded-b-lg">
             <div className="flex items-center justify-between mb-3">
               <h3 className="text-xl font-semibold text-gray-800">Total Amount</h3>
-              <h3 className="text-2xl font-bold text-blue-600">{paymentOption === "payfull"?total:10} BHD</h3>
+              <h3 className="text-2xl font-bold text-blue-600">{paymentOption === "payfull"?total:10} QAR</h3>
             </div>
             <button
               type="submit"
               className="w-full  bg-[#025380] -600 text-white py-3 px-4 rounded-lg font-semibold hover: bg-[#025380] -700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition-colors"
             >
-              Continue to Payment ({paymentOption === "payfull"?total:10} BHD)
+              Continue to Payment ({paymentOption === "payfull"?total:10} QAR)
             </button>
           </div>
         </form>

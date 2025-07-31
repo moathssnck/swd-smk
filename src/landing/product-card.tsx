@@ -36,7 +36,7 @@ export function ProductCard({ product, variant = "vertical" }: ProductCardProps)
             {product.description && <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{product.description}</p>}
           </div>
           <div className="flex items-center justify-between mt-2">
-            <p className="text-lg font-bold text-blue-600 dark:text-blue-500">{product.price.toFixed(2)} BHD</p>
+            <p className="text-lg font-bold text-blue-600 dark:text-blue-500">{product.price.toFixed(2)} QAR</p>
             <button className={commonButtonClasses} onClick={() => addToCart(product)}>
               <PlusIcon className={iconClasses} aria-hidden="true" />
               Add to Cart
@@ -60,7 +60,7 @@ export function ProductCard({ product, variant = "vertical" }: ProductCardProps)
       </div>
       <div className="p-4 flex-grow flex flex-col">
         <h3 className="text-md font-semibold text-gray-800 dark:text-gray-100 mb-1 flex-grow">{product.name}</h3>
-        <p className="text-lg font-bold text-blue-600 dark:text-blue-500 mt-1">{product.price.toFixed(2)} BHD</p>
+        <p className="text-lg font-bold text-blue-600 dark:text-blue-500 mt-1">{product.price.toFixed(2)} QAR</p>
       </div>
       <div className="p-4 pt-0">
         <button className={`${commonButtonClasses} w-full`} onClick={() => addToCart(product)}>
